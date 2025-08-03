@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LogiMind Design System - Professional Logistics Platform
+All colors MUST be HSL. Blue/Green theme for logistics intelligence.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 0 0% 99%;
+    --foreground: 215 25% 15%;
+
+    /* Card Components */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Popover Components */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary Brand - Professional Blue */
+    --primary: 217 91% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 217 91% 60%;
+    --primary-dark: 217 91% 35%;
+
+    /* Secondary - Neutral Professional */
+    --secondary: 215 20% 96%;
+    --secondary-foreground: 215 25% 15%;
+
+    /* Success - Logistics Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 45%;
+
+    /* Warning - Logistics Orange */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Error - Alert Red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Muted Elements */
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 15% 50%;
+
+    /* Accent - Logistics Teal */
+    --accent: 191 85% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Borders and Inputs */
+    --border: 215 20% 90%;
+    --input: 215 20% 95%;
+    --ring: 217 91% 48%;
+
+    /* Layout */
+    --radius: 0.5rem;
+
+    /* Sidebar - Professional Dark */
+    --sidebar-background: 215 30% 8%;
+    --sidebar-foreground: 215 15% 85%;
+    --sidebar-primary: 217 91% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 215 15% 85%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 217 91% 48%;
+
+    /* Chart Colors */
+    --chart-primary: 217 91% 48%;
+    --chart-secondary: 142 76% 36%;
+    --chart-accent: 191 85% 50%;
+    --chart-warning: 38 92% 50%;
+    --chart-error: 0 84% 60%;
+  }
+
+  .dark {
+    /* Dark Mode - Professional Dark Theme */
+    --background: 215 30% 6%;
+    --foreground: 215 15% 95%;
+
+    --card: 215 30% 8%;
+    --card-foreground: 215 15% 95%;
+
+    --popover: 215 30% 8%;
+    --popover-foreground: 215 15% 95%;
+
+    --primary: 217 91% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 217 91% 65%;
+    --primary-dark: 217 91% 45%;
+
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 215 15% 85%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 55%;
+
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 100%;
+
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 191 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 15%;
+    --ring: 217 91% 55%;
+
+    /* Sidebar Dark */
+    --sidebar-background: 215 30% 4%;
+    --sidebar-foreground: 215 15% 90%;
+    --sidebar-primary: 217 91% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 12%;
+    --sidebar-accent-foreground: 215 15% 90%;
+    --sidebar-border: 215 25% 18%;
+    --sidebar-ring: 217 91% 55%;
+
+    /* Chart Colors Dark */
+    --chart-primary: 217 91% 55%;
+    --chart-secondary: 142 76% 45%;
+    --chart-accent: 191 85% 55%;
+    --chart-warning: 38 92% 55%;
+    --chart-error: 0 84% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
