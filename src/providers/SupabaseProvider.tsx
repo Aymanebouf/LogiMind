@@ -1,4 +1,3 @@
-// src/providers/SupabaseProvider.tsx
 'use client';
 
 import { ReactNode } from 'react';
